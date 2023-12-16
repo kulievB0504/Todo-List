@@ -17,13 +17,26 @@
 </head>
 
 <body>
+
     <h1>Todo List</h1>
     <form name="todo">
-        <input type="text" name="title">
-        <button type="submit" >add</button>
+        <input type="text" name="task">
+        <button type="submit">add</button>
     </form>
     <div class="container">
 
+    </div>
+    <div class="modal">
+        <div class="modal-dialog">
+            <h2>Заголовок: </h2>
+            <form name="changeTodo">
+                <input type="text">
+                <div class="btn_box">
+                    <button type="submit">Изменить</button>
+                    <button type="button" data-close class="Отмена">Отменить</button>
+                </div>
+            </form>
+        </div>
     </div>
 
     <script src="./index.js"></script>
